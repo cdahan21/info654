@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="./CSS/general.css" />
+</head>
+<body>
+    <div class="header">
+        <h1>Chloe's Cookbook</h1>
+        <a href="https://www.instagram.com/thingsbychlo/" aria-label="Visit Chloe's Instagram (opens in a new tab)" target="_blank">
+            <img src="./images/Instagram-Emblem.png" alt="Instagram" class="ig-icon">
+        </a>
+    </div>
+    <div class="navbar">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./aboutme.html">About Me</a>
+        <a href="./baking.html">Baking</a>
+    </div>
+    <div class="intro-section">
+        <div class="image-grid">
+            <div class="grid-item text-item">
+                <h1>Baking, creating and sharing.</h1>
+                <p>My name is Chloe and I wanted to organize a repository of some of my recent baking endeavors.</p>
+                <div class="button-container">
+                    <a href="#recent-section" class="section-button">Recently Added Recipes</a>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./images/redvelvetcake.JPG" alt="Red Velvet Cake">
+            </div>
+            <div class="grid-item">
+                <img src="./images/olive-oil-blood-orange-loaf.jpg" alt="Olive Oil Blood Orange Loaf">
+            </div>
+            <div class="grid-item">
+                <img src="./images/matcha-strawberry-white-chocolate-cookies.jpg" alt="Matcha Strawberry White Chocolate Cookies">
+            </div>
+            <div class="grid-item">
+                <img src="./images/peacan-coconut-vanilla-cake.jpg" alt="Pecan Coconut Vanilla Cake">
+            </div>
+            <div class="grid-item">
+                <img src="./images/holiday-sugar-cookies.jpg" alt="Holiday Sugar Cookies">
+            </div>
+        </div>
+    </div>
+    <div class="home-section">
+        <div class="about-box">
+            <div class="about-box-text">
+                <h2>I've loved baking for as long as I can remember.</h2>
+            </div>
+            <a href="aboutme.html" class="section-button">Learn More About Me</a>
+        </div>
+    </div>
+    <div id="recent-section" class="home-section">
+        <h2 class="section-title">Recently Added</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="./images/berry-chocolate-cake.jpg" alt="Berry chocolate cake with rasberrys and blueberries around the top of the cake.">
+                </div>
+                <div class="recipe-content">
+                    <h3>Berry Chocolate Cake</h3>
+                    <div class="recipe-meta">
+                        <span>⏱️ 1 hour 10 minutes</span>
+                        <span>🍽️ 16 servings</span>
+                    </div>
+                    <p>Rich, moist chocolate cake meets tangy raspberry filling and silky chocolate frosting — a perfect balance of decadent and fresh.</p>
+                    <a href="./recipes/berry-chocolate-cake.html" class="recipe-button">View Recipe</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="./images/coffee-cake.jpg" alt="Slice of coffee cake on a plate.">
+                </div>
+                <div class="recipe-content">
+                    <h3>Coffee Cake</h3>
+                    <div class="recipe-meta">
+                        <span>⏱️ 30 min</span>
+                        <span>🍽️ 9 servings</span>
+                    </div>
+                    <p>A soft, buttery coffee cake with a sweet cinnamon streusel topping.</p>
+                    <a href="./recipes/coffee-cake.html" class="recipe-button">View Recipe</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="./images/matcha-strawberry-white-chocolate-cookies.jpg" alt="Green cookies with white chocolate chips and pieces of strawberry and a stawberry drizzle on a baking sheet.">
+                </div>
+                <div class="recipe-content">
+                    <h3>Matcha White Chocolate Strawberry Cookies</h3>
+                    <div class="recipe-meta">
+                        <span>⏱️ 1 hour 5 min</span>
+                        <span>🍽️ 8 servings</span>
+                    </div>
+                    <p>Earthy matcha balanced by creamy white chocolate and tang of strawberry.</p>
+                    <a href="./recipes/matcha-strawberry-white-chocolate-cookies.html" class="recipe-button">View Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
