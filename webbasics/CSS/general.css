@@ -12,7 +12,6 @@ html, body {
     background-color: #fffff0;
     padding: 1px;
     border-bottom: solid #2f4f4f;
-    
 }
 
 .header h1 {
@@ -25,8 +24,8 @@ html, body {
 
 .header a {
     position: absolute;
-    top: 20px;   /* distance from top of header */
-    right: 10px; /* distance from right edge */
+    top: 20px;   
+    right: 10px;
 }
 
 .ig-icon {
