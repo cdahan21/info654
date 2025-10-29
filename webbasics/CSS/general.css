@@ -6,29 +6,47 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/*accessibility - screen reader only*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
 /*global - header*/
 .header {
     text-align: center;
     background-color: #fffff0;
     padding: 1px;
     border-bottom: solid #2f4f4f;
+    
 }
 
 .header h1 {
     font-family: Brush Script MT, cursive;
-    font-weight: normal;
+    font-weight: 100;
     font-size: 3em;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.header a {
+.header img {
     position: absolute;
-    top: 20px;   
-    right: 10px;
+    top: 20px;
+    right: 30px;
 }
 
-.ig-icon {
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ig-icon{
     width: 40px;
 }
 
@@ -437,6 +455,14 @@ html, body {
   font-weight: normal;
 }
 
+.content-area a {
+  margin: 0 0 20px;
+  color: #2f4f4f;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+
 .recipe-meta-large {
   display: flex;
   gap: 20px;
@@ -604,6 +630,61 @@ html, body {
     text-align: left;
     font-size: 1.1em;
     border: 2px solid #2f4f4f;
+}
+
+footer {
+    background-color: #fcfccd;
+    border-top: 2px solid #2f4f4f;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    color: #2f4f4f;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*baking - table*/
+.measurements-section {
+    padding: 30px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.measurements-section h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: darkslategrey;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2f4f4f;
+    padding-bottom: 10px;
+}
+
+.measurements-table {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #2f4f4f;
+    border-radius: 4px;
+}
+
+.measurements-table th,
+.measurements-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #2f4f4f;
+}
+
+.measurements-table th {
+    background-color: #fcfccd;
+    font-weight: bold;
+}
+
+.measurements-table tbody tr:nth-child(odd) {
+    background-color: #fffff0;
+}
+
+.measurements-table tbody tr:nth-child(even) {
+    background-color: #f0f0e6;
 }
 
 /*responsiveness*/
