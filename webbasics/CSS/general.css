@@ -632,7 +632,7 @@ html, body {
     border: 2px solid #2f4f4f;
 }
 
-footer {
+#footer {
     background-color: #fcfccd;
     border-top: 2px solid #2f4f4f;
     text-align: center;
