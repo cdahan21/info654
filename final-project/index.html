@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Home - Like A New Yorker</title>
+  <meta name="description" content="Explore NYC's like a new yorker">
+  <meta name="author" content="Chloe Dahan, Kathy Baik, Rachel S. Khmelnitsky, and Sabrina Guzman">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pinyon+Script&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- Skip link for keyboard navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header id="header">
+    <div id="logo-container">
+      <div id="logo">
+        <a href="index.html">
+          <img src="./images/nyclogo.png" alt="Like a New Yorker site logo">
+        </a>
+      </div>
+    </div>
+    <div id="header-container">
+      <nav id="nav" role="navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a class="blog active-page" href="index.html" aria-current="page">The Blog</a></li>
+          <li><a class="meetnyc" href="meetnyc.html">Meet NYC</a></li>
+          <li><a class="art" href="art.html">The Art</a></li>
+          <li><a class="food" href="food.html">What's Good?</a></li>
+          <li><a class="life" href="life.html">Day & Nightlife</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner with skyline image -->
+  <section class="banner" role="banner" aria-label="Skyline of New York City">
+    <img class="banner-img" src="./images/skyline.JPG" alt="">
+    <div class="banner-text">
+      <h1>Like A New Yorker</h1>
+      <p>Exploring NYC the way locals do</p>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <main id="main-content" class="content-section">
+    <div class="content-container">
+      <h2>About Our Site</h2>
+      <p>This website is dedicated to exploring NYC like a new yorker. Each page is dedicated to different kinds of
+        activities to help you discover the city beyond the guidebooks.</p>
+
+      <div class="activities-grid">
+        <div class="activity-card card-meetnyc" role="region" aria-labelledby="meetnyc-heading">
+          <h3 id="meetnyc-heading">Meet NYC</h3>
+          <p>Your hub for third spaces, community events, and volunteer opportunities</p>
+          <a href="meetnyc.html" aria-label="Explore Meet NYC">Explore →</a>
+        </div>
+
+        <div class="activity-card card-art" role="region" aria-labelledby="art-heading">
+          <h3 id="art-heading">The Art</h3>
+          <p>Discover NYC's hidden art gems, galleries, museums, and public art installations</p>
+          <a href="art.html" aria-label="Explore The Art">Explore →</a>
+        </div>
+
+        <div class="activity-card card-food" role="region" aria-labelledby="food-heading">
+          <h3 id="food-heading">NYC Eats By Borough</h3>
+          <p>Uncover the best food and dining experiences across all five boroughs</p>
+          <a href="food.html" aria-label="Explore Food">Explore →</a>
+        </div>
+
+        <div class="activity-card card-life" role="region" aria-labelledby="life-heading">
+          <h3 id="life-heading">Day & Nightlife</h3>
+          <p>From daytime adventures to late-night hotspots, experience NYC's vibrant lifestyle</p>
+          <a href="life.html" aria-label="Explore Day and Nightlife">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Authors Section (moved outside content-section) -->
+  <div class="authors-section">
+    <h2>Meet The Curators</h2>
+    <div class="authors-grid">
+      <div class="author-card">
+        <div class="author-photo-wrap">
+          <img class="author-photo" src="./images/kathy.jpg" alt="Photo of Kathy Baik">
+        </div>
+        <h3>Kathy Baik</h3>
+        <p>Discovering NYC's vibrant neighborhoods and hidden community spaces</p>
+      </div>
+
+      <div class="author-card">
+        <div class="author-photo-wrap">
+          <img class="author-photo" src="./images/chloe.jpg" alt="Photo of Chloe Dahan">
+        </div>
+        <h3>Chloe Dahan</h3>
+        <p>Exploring art and culture throughout the city</p>
+      </div>
+
+      <div class="author-card">
+        <div class="author-photo-wrap">
+          <img class="author-photo" src="./images/sabrina.jpg" alt="Photo of Sabrina Guzman">
+        </div>
+        <h3>Sabrina Guzman</h3>
+        <p>Finding the best food and dining experiences across the boroughs</p>
+      </div>
+
+      <div class="author-card">
+        <div class="author-photo-wrap">
+          <img class="author-photo" src="./images/rachel.jpg" alt="Photo of Rachel S. Khmelnitsky">
+        </div>
+        <h3>Rachel S. Khmelnitsky</h3>
+        <p>Uncovering NYC's vibrant day and nightlife scenes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALBUM SECTION FOR BLOG POST -->
+  <div id="subhdr">
+    <h2>How would you use your day off to explore NYC?</h2>
+  </div>
+  
+  <!-- Main wrapper that holds BOTH the slideshow and the text under it -->
+  <div class="imagecontainer-wrapper">
+    <!-- Slideshow section (image + arrows) -->
+    <div class="slideshow">
+      <!-- Left arrow button (go to previous image) -->
+      <button class="prev" aria-label="Previous slide">←</button>
+      <!-- The image that will change when arrows are clicked -->
+      <img class="slide-img" src="./images/mta.jpeg" alt="Featured image">
+      <!-- Right arrow button (go to next image) -->
+      <button class="next" aria-label="Next slide">→</button>
+    </div>
+
+    <!-- Text section under the image -->
+    <div class="fixed-text">
+      <!-- The title or name that stays the same -->
+      <p class="p2">Get to know...</p>
+      <!-- This paragraph changes automatically when the image changes -->
+      <p class="caption-text"></p>
+    </div>
+
+  </div>
+
+  <!-- slide show -->
+  <script>
+document.querySelectorAll('.imagecontainer-wrapper').forEach(wrapper => {    //finds all slideshows on the page / lets the same code run for each slideshow.
+  const slideshow = wrapper.querySelector('.slideshow'); //the box with image + arrows
+  const img = slideshow.querySelector('.slide-img');
+  const prevBtn = slideshow.querySelector('.prev');
+  const nextBtn = slideshow.querySelector('.next');
+  const captionEl = wrapper.querySelector('.caption-text'); //the paragraph under the image
+
+  // Your images (a list) 
+  //This list stores ALL the images you want to rotate through.
+  const images = [
+    './images/kathyjimmy.jpeg',
+    './images/chloeandtrevor.png',
+    './images/jc.jpg',
+    './images/rachelmatthew.jpg'
+  ];
+
+  // Your 3–5 sentence paragraphs (one per image) M;
+  const captions = [
+    /* BLOG 1 */ "Hi I’m Kathy! I’ve been in New York for almost 5 years. On a my days off where I’m not in a homebody mood, I love to start early with an outdoors run in a park. Then I’d go to a cozy lil’ cafe for my mandatory daily cup of coffee and maybe a sweet treat (check out my page for cafe recs!). I’d continue my day with perusing around vintage shops in Brooklyn or the Lower East Side. I’d top off my night with a extra dirty martini or glass of wine while people watching at an outdoor bar like Casetta or Bar Pisellino (a little crowded, but well worth the hype).",
+  /* BLOG 2 */ "Hi, I'm Chloe! This is my 3rd year living in New York (specifically Brooklyn). My dream day off would be starting the day with breakfast at a diner (Three Decker Diner in Greenpoint is my favorite), followed by a latte nearby at a cool coffee shop. I'd take my drink and walk around N. 5th St. Pier to Marsha P. Johnson Park in Williamsburg and sit by the water. After, I'd hop around some nearby thrift stores and other fun shops. I would then go to my ceramics studio for a little while and work on some projects. After I'd get Phở nearby at High Lua. To end the night, I'd go to Williamsburg Cinema and get root beer + peanut M&Ms for a nightcap.",
+  /* BLOG 3 */ "Hi, I’m Sabrina! Born and raised in Sunset Park, I start my days off with a warm pink concha from my childhood Panaderia and a Yaimen coffee from YAFA Café, where they already know to ask, “Hot or cold today?” With my coffee, I hop on the train to the Met to explore the Egyptian exhibit, taking full advantage of my NYC resident donation entry. Then im off to my favoirte local resturant Verde on Smith, for my usual: fried calamari to start and a medium-rare ribeye with mashed potatoes and asparagus. Pure happiness. That’s the magic of NYC — one train ride and suddenly your whole day turns into an adventure.",
+  /* BLOG 4 */ "Hi, I'm Rachel! I'm a native New Yorker from South Brooklyn. I would use my day off to explore NYC by walking to get some Vietnamese ice coffee near home in Bensonhurst. Take the D train to SoHo for brunch and window shopping. Then, walk and people watch on the way down to The Battery in FiDi to see the Miffy Statue, ride the seashell carousel, and the take the free Staten Island Ferry back and forth for the ocean breeze. From FiDi I can take the 5 or 4 train back to Brooklyn to Cobble Hill for dinner and drinks, then a movie at Cobble Hill Cinema."
+  ];
+
+  let currentIndex = 0; //This means the slideshow begins on the firt image
+
+  function showSlide(index) { //This function is the "engine" that updates the slideshow.
+    img.src = images[index];
+    captionEl.textContent = captions[index];
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length; //moves backwards and wraps around 
+    showSlide(currentIndex); //updates the screen
+  });
+
+  //updates image and text
+  nextBtn.addEventListener('click', () => {  //moves forward
+    currentIndex = (currentIndex + 1) % images.length;  //wraps around to slide 0 when you reach the end 
+    showSlide(currentIndex);
+  });
+
+  // Show the first slide
+  showSlide(currentIndex);
+});
+  </script>
+
+  <!-- Footer -->
+  <footer id="footer" role="contentinfo">
+    <p>&copy; 2025 Like A New Yorker</p>
+    <p>Curated by Kathy Baik, Chloe Dahan, Sabrina Guzman, and Rachel S. Khmelnitsky</p>
+  </footer>
+</body>
+
+</html>

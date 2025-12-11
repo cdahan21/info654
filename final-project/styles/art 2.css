@@ -1,0 +1,922 @@
+/* Root color variables */
+:root {
+    --gossamer: #fef2ff;
+    --vanilla: #fffef2;
+    --blueberry: #7C9DD2;
+    /* Kathy Baik - Meet NYC */
+    --verdant: #dae080;
+    /* Chloe Dahan - The Art */
+    --raspberry: #D14C18;
+    /* Sabrina Guzman - What's Good? */
+    --peppermint: #f8e8fa;
+    /* Rachel S. Khmelnitsky - Day & Nightlife */
+    --sunbeam: #eeb570;
+    /* Blog color */
+    --lilac: #efaee4;
+    --moss: #4b4e01;
+    --dusk: #250f12;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main body styles - sets the default font, colors, and background */
+body {
+    background-color: var(--vanilla);
+    color: var(--dusk);
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/* [GLOBAL] Skip link appears when focused - helps with keyboard navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--dusk);
+    color: var(--vanilla);
+    padding: 8px;
+    z-index: 1000;
+    text-decoration: none;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* [GLOBAL] header*/
+#header {
+    width: 100%;
+    background-color: var(--vanilla);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* [GLOBAL] Logo container - keeps logo centered with good spacing that adapts to screen size */
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#logo img {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+#header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    border-top: 2px solid var(--dusk);
+    border-bottom: 2px solid var(--dusk);
+    box-sizing: border-box;
+}
+
+/* [GLOBAL] Navigation */
+#nav ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#nav li {
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+
+nav a {
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--dusk);
+    padding: 8px 16px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover colors by member */
+
+/* The Blog */
+nav a.blog:hover {
+    background-color: var(--sunbeam);
+    color: var(--dusk);
+}
+
+/* Kathy - Meet NYC */
+nav a.meetnyc:hover {
+    background-color: var(--blueberry);
+    color: var(--dusk);
+}
+
+/* Chloe - The Art */
+nav a.art:hover {
+    background-color: var(--verdant);
+    color: var(--dusk);
+}
+
+/* Sabrina - What's Good? */
+nav a.food:hover {
+    background-color: var(--raspberry);
+    color: var(--dusk);
+}
+
+/* Rachel - Day & Nightlife */
+nav a.life:hover {
+    background-color: var(--peppermint);
+    color: var(--dusk);
+}
+
+/* Active page - Switch to your page color or hover nav color */
+nav a.active-page {
+    background-color: var(--verdant);
+    color: var(--dusk);
+    border: 2px solid var(--dusk);
+}
+
+/*Hero section*/
+
+.hero-section {
+    display: flex;
+    min-height: 600px;
+    width: 100%;
+    background-color: var(--verdant);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    width: 50%;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero-content h1 {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 200;
+    font-size: 64px;
+    color: var(--dusk);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--dusk);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.scroll-arrow {
+    font-size: 32px;
+    color: var(--moss);
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.hero-image {
+    width: 50%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Main content section*/
+
+.author-note-section {
+    background-color: var(--vanilla);
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.author-note-section h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 32px;
+    color: var(--dusk);
+    margin-bottom: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author-note-section p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--dusk);
+    line-height: 1.8;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Container */
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Section Titles */
+section h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--dusk);
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Been There Section */
+.been-there-section {
+    background-color: var(--gossamer);
+}
+
+.intro-text {
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--dusk);
+}
+
+/* Art Cards Grid */
+.art-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.art-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.art-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image carousel container */
+.image-carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-carousel.expanded {
+    height: 500px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Thumbnail images below main image */
+.thumbnails {
+    display: flex;
+    gap: 6px;
+    padding: 12px;
+    background-color: #f5f5f5;
+    overflow-x: auto;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+    border-color: var(--verdant);
+}
+
+/* Card content with text info */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--dusk);
+}
+
+.card-content a {
+    font-size: 14px;
+    color: var(--dusk);
+    margin-bottom: 10px;
+}
+
+/* Tags for type (museum, gallery, etc) */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.tag {
+    font-size: 12px;
+    background-color: var(--moss);
+    color: var(--gossamer);
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+/* Location text */
+.location {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.location a {
+    font-size: 14px;
+    color: var(--dusk);
+}
+
+.card-content p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Recommendations Section */
+.recommendations-section {
+    background-color: var(--sunbeam);
+}
+
+.rec-intro {
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    font-size: 16px;
+    color: var(--dusk);
+    line-height: 1.8;
+}
+
+/* Recommendation cards with single image */
+.rec-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rec-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rec-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.rec-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Favorite Museum Section */
+.favorite-museum-section {
+    background-color: var(--gossamer);
+}
+
+.museum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Layout with images on left, text on right */
+.museum-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.museum-gallery {
+    margin: 0;
+}
+
+.main-museum-image {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-museum-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Thumbnail gallery for favorite museum */
+.museum-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.museum-thumb {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.museum-thumb:hover,
+.museum-thumb.active {
+    border-color: var(--dusk);
+}
+
+.museum-intro {
+    margin: 0;
+}
+
+.museum-intro h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 24px;
+    color: var(--dusk);
+    margin-bottom: 10px;
+}
+
+.museum-intro p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--dusk);
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.museum-intro a {
+    font-size: 14px;
+    color: var(--dusk);
+}
+
+.museum-location {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Street Art section */
+.street-art-section {
+    background-color: var(--verdant);
+}
+
+/* Street Art Gallery Grid */
+.street-art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.art-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.art-photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.art-photo:hover img {
+    transform: scale(1.05);
+}
+
+/* Label overlay on photo */
+.art-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--dusk);
+    color: var(--vanilla);
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Pro Tips Section */
+.tips-section {
+    background-color: var(--moss);
+}
+
+.tips-section h2 {
+    color: var(--vanilla);
+    text-align: left;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background-color: var(--vanilla);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid var(--lilac);
+}
+
+.tip-card h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 20px;
+    color: var(--moss);
+    margin-bottom: 12px;
+}
+
+.tip-card p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--dusk);
+    line-height: 1.6;
+}
+
+/* [GLOBAL] footer*/
+
+#footer {
+    width: 100%;
+    background-color: var(--dusk);
+    color: var(--vanilla);
+    padding: 20px 0;
+    border-top: 2px solid var(--dusk);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#footer p {
+    font-size: clamp(11px, 2vw, 14px);
+    font-weight: 300;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+#footer p:first-child {
+    font-weight: 500;
+}
+
+/* Accessibility helpers: visible skip link on focus and screen-reader only class */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: #000;
+    color: #fff;
+    z-index: 9999;
+}
+
+/* Responsive Design*/
+
+/* Mobile (under 768px) */
+@media (max-width: 767px) {
+    #header-container {
+        padding: 12px 15px;
+    }
+
+    #logo img {
+        height: 40px;
+    }
+
+    #nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 40px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    .section-container {
+        padding: 0 15px;
+    }
+
+    .art-cards,
+    .rec-cards {
+        gap: 20px;
+    }
+
+    .museum-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .main-museum-image {
+        height: 300px;
+    }
+
+    .museum-thumbnails {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .rec-intro {
+        font-size: 14px;
+    }
+
+    #footer {
+        padding: 20px 15px;
+    }
+}
+
+/* Small Mobile (under 480px) */
+@media (max-width: 479px) {
+    nav a {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    #nav ul {
+        gap: 8px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        height: 200px;
+    }
+
+    .hero-section {
+        min-height: auto;
+    }
+
+    section {
+        padding: 30px 12px;
+    }
+
+    .section-container {
+        padding: 0 12px;
+    }
+
+    section h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .author-note-section h2 {
+        font-size: 24px;
+    }
+
+    .card-content h3 {
+        font-size: 18px;
+    }
+
+    .museum-intro h3 {
+        font-size: 20px;
+    }
+
+    .main-museum-image {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+
+    .museum-thumbnails {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .museum-thumb {
+        height: 80px;
+    }
+
+    .tip-card {
+        padding: 20px;
+    }
+
+    .tip-card h3 {
+        font-size: 16px;
+    }
+
+    #footer p {
+        font-size: 11px;
+        margin: 2px 0;
+    }
+}
+
+/* Tablets (768px and up) */
+@media (min-width: 768px) {
+    #header-container {
+        padding: 20px 40px;
+    }
+
+    #nav ul {
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    section {
+        padding: 60px 40px;
+    }
+
+    .section-container {
+        padding: 0 20px;
+    }
+
+    .author-note-section {
+        padding: 60px 40px;
+    }
+
+    .art-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rec-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .museum-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .main-museum-image {
+        height: 500px;
+    }
+
+    #footer {
+        text-align: left;
+        padding: 20px 40px;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    .art-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .rec-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-section {
+        min-height: 600px;
+    }
+}
+
+/* Large Desktops (1440px and up) */
+@media (min-width: 1440px) {
+    .section-container {
+        max-width: 1300px;
+        padding: 0 40px;
+    }
+}
